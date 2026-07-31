@@ -28,6 +28,14 @@ Spring PetClinic is a sample veterinary management system demonstrating layered 
 Spring-PetClinic/
 ```
 
+## Folder Structure
+
+Spring-PetClinic/
+├── Original-Code/
+├── Selected-Files/
+├── File-Descriptions.md
+└── Project-Description.md
+
 Each folder contains:
 
 - Selected source files
