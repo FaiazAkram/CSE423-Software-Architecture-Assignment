@@ -31,9 +31,13 @@ Spring-PetClinic/
 ## Folder Structure
 
 Spring-PetClinic/
+
 ├── Original-Code/
+
 ├── Selected-Files/
+
 ├── File-Descriptions.md
+
 └── Project-Description.md
 
 
