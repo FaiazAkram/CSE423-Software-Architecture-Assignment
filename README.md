@@ -36,7 +36,8 @@ Spring-PetClinic/
 ├── File-Descriptions.md
 └── Project-Description.md
 
-Each folder contains:
+
+## Each folder contains:
 
 - Selected source files
 - File descriptions
