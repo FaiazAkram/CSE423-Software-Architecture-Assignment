@@ -41,8 +41,9 @@ The purpose of this repository is to:
 ```text
 Spring-PetClinic/
 ├── Original-Code/
-├── Selected-Files/
+├── Reconstracted-LLM-Codes/
 ├── File-Descriptions.md
+├── LLM-File-Descriptions.md
 ├── Project-Description.md
 └── README.md
 ```
