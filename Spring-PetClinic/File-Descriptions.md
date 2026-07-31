@@ -1,59 +1,39 @@
 # Spring PetClinic File Descriptions
 
-## OwnerController.java
+## PetClinicApplication.java
+The main Spring Boot application class. It starts the application and initializes the Spring IoC container, which manages the creation and lifecycle of application beans.
 
-Handles HTTP requests related to Owner management.
+---
+
+## OwnerController.java
+Handles HTTP requests related to pet owners and forwards requests to the appropriate repository or service components.
 
 ---
 
 ## PetController.java
-
-Handles operations related to pets.
-
----
-
-## VetController.java
-
-Processes requests related to veterinary staff.
-
----
-
-## VisitController.java
-
-Handles appointment and visit operations.
-
----
-
-## ClinicService.java
-
-Contains business logic used by multiple controllers.
+Handles HTTP requests related to pet management, including creating, updating, and retrieving pet information.
 
 ---
 
 ## OwnerRepository.java
-
-Provides database access for Owner entities.
+Provides database access for Owner entities using Spring Data JPA. It is managed by Spring and demonstrates dependency injection.
 
 ---
 
-## Pet.java
-
-Represents a Pet entity.
+## VetRepository.java
+Provides database access for Veterinarian entities using Spring Data JPA.
 
 ---
 
 ## Owner.java
+Represents the Owner entity and stores owner-related information.
 
-Represents an Owner entity.
+---
+
+## Pet.java
+Represents the Pet entity and stores pet-related information.
 
 ---
 
 ## Vet.java
-
-Represents a Veterinarian entity.
-
----
-
-## Visit.java
-
-Represents a veterinary visit.
+Represents the Veterinarian entity and stores veterinarian-related information.
