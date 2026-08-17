@@ -1,0 +1,58 @@
+====================================================================
+OwnerRepository.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+OwnerRepository provides the persistence interface for Owner
+entities.
+
+It uses Spring Data JPA so database operations can be performed
+without manually implementing SQL or a repository implementation.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Provide CRUD operations for Owner entities.
+  - Retrieve owners by their database ID.
+  - Search owners by last name.
+  - Support paginated owner queries.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Repository definition
+
+  OwnerRepository extends JpaRepository<Owner, Integer>.
+
+  This gives the application standard persistence operations such
+  as save(), findById(), findAll(), and delete().
+
+STEP 2 — Owner search
+
+  findByLastNameStartingWith() retrieves owners whose last names
+  begin with a specified value.
+
+STEP 3 — Pagination
+
+  The search method accepts a Pageable object, allowing owner
+  results to be retrieved page by page.
+
+STEP 4 — Database abstraction
+
+  The repository interface separates persistence operations from
+  the controller and domain model.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - Repository layer
+  - Uses Spring Data JPA
+  - Extends JpaRepository
+  - Abstracts database operations
+  - Supports custom query-method-based searching
+  - Uses pagination
