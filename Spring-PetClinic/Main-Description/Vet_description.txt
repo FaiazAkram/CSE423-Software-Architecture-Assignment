@@ -1,0 +1,63 @@
+====================================================================
+Vet.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+Vet.java represents a veterinarian in the Spring PetClinic domain
+model.
+
+It is a JPA entity that extends Person and maintains the
+relationship between veterinarians and their specialties.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Represent a veterinarian as a persistent entity.
+  - Store inherited personal information.
+  - Maintain veterinarian specialties.
+  - Provide access to specialty information.
+  - Support sorting and presentation of veterinarian data.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Entity definition
+
+  Vet is annotated with @Entity and mapped to the "vets" table.
+
+STEP 2 — Person inheritance
+
+  Vet extends Person, allowing it to reuse common personal
+  information such as name and ID.
+
+STEP 3 — Specialty relationship
+
+  A veterinarian can have multiple specialties.
+
+  The relationship is implemented using @ManyToMany and a
+  "vet_specialties" join table.
+
+STEP 4 — Specialty management
+
+  The class maintains a Set of Specialty objects and provides
+  methods for accessing and managing the collection.
+
+STEP 5 — Presentation support
+
+  The class contains functionality for handling veterinarian
+  specialty information and ordering.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - JPA Entity / Domain Model
+  - Extends Person
+  - Represents veterinarians
+  - Uses Many-to-Many relationship
+  - Connected to Specialty
+  - Uses a join table for persistence
