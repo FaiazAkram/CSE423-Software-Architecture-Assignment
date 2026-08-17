@@ -28,14 +28,14 @@ com.vetclinic
 ```
 ## Design Patterns
 
-Factory Pattern
+### Factory Pattern
 
 Factory classes are used to separate entity and DTO creation from business logic.
 
-Singleton
+### Singleton
 
 Service classes are managed by Spring dependency injection and use Spring's default singleton scope.
 
-Purpose
+### Purpose
 
 This iteration is used to analyze the preservation of the Factory and Singleton patterns and the improvement of layered architectural separation.
