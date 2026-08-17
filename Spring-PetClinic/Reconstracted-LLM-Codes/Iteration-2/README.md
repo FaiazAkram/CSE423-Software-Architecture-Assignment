@@ -11,11 +11,11 @@ The system follows a layered structure:
 ```text
 Controller
     ↓
-Service
+ Service
     ↓
 Repository
     ↓
-Entity
+  Entity
 
 com.vetclinic
 ├── controller    → REST API endpoints
