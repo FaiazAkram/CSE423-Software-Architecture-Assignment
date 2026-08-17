@@ -1,0 +1,60 @@
+====================================================================
+Pet.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+Pet.java represents a pet in the Spring PetClinic domain model.
+
+It is a JPA entity that extends NamedEntity and stores information
+about a pet, including its birth date, type, owner, and visits.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Represent a pet as a persistent domain entity.
+  - Store pet-specific information.
+  - Maintain the relationship with its owner.
+  - Maintain the pet's visits.
+  - Provide access to the pet's type and visit information.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Entity definition
+
+  Pet is annotated with @Entity and mapped to the "pets" database
+  table.
+
+STEP 2 — Pet information
+
+  The class contains pet-specific information such as its birth
+  date and pet type.
+
+STEP 3 — Owner relationship
+
+  A Pet is associated with an Owner through a JPA relationship.
+
+STEP 4 — Visit relationship
+
+  The class maintains a collection of Visit objects and supports
+  adding visits to the pet.
+
+STEP 5 — Domain behavior
+
+  Pet provides methods for managing its own relationships and
+  domain information rather than acting only as a data container.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - JPA Entity / Domain Model
+  - Extends NamedEntity
+  - Represents a pet in the veterinary system
+  - Connected to Owner
+  - Maintains Visit relationships
+  - Uses JPA relationship mappings
