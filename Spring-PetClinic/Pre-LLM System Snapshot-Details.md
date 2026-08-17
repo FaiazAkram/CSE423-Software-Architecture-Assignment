@@ -38,5 +38,4 @@ Evidence:
 - Repository beans
 
 ### Factory
-[This needs to be supported by an actual Factory abstraction in the
-original system before we claim it.]
+The Spring PetClinic code uses the factory pattern.
