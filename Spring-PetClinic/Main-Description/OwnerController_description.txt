@@ -1,1 +1,76 @@
+====================================================================
+OwnerController.java — Description
+====================================================================
 
+OVERVIEW
+--------
+
+OwnerController handles web requests related to pet owners in the
+Spring PetClinic application.
+
+It is a Spring MVC controller that receives HTTP requests, interacts
+with OwnerRepository, performs form validation, and returns the
+appropriate views or redirects.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Display owner forms and owner information.
+  - Create new owners.
+  - Update existing owners.
+  - Search for owners.
+  - Display paginated owner results.
+  - Validate submitted owner information.
+  - Handle owner-related navigation and redirects.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Controller initialization
+
+  The class is annotated with @Controller and receives an
+  OwnerRepository through constructor injection.
+
+STEP 2 — Owner lookup
+
+  findOwner() retrieves an owner using its ID.
+
+  If no ID is supplied, a new Owner object is created.
+
+STEP 3 — Creating an owner
+
+  The controller provides GET and POST operations for creating
+  owners.
+
+  Submitted data is validated before being saved through the
+  OwnerRepository.
+
+STEP 4 — Searching owners
+
+  processFindForm() accepts a last-name search and retrieves matching
+  owners.
+
+  Results are displayed using pagination.
+
+STEP 5 — Updating owners
+
+  The controller verifies the owner ID and saves the updated owner
+  through OwnerRepository.
+
+STEP 6 — Displaying owners
+
+  showOwner() prepares the owner information and returns the
+  appropriate owner-details view.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - Spring MVC Controller
+  - Handles HTTP/web requests
+  - Uses constructor dependency injection
+  - Directly depends on OwnerRepository
+  - Performs form validation
+  - Handles navigation, views, and redirects
