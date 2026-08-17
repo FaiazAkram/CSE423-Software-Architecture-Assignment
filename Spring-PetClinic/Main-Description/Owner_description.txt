@@ -1,1 +1,75 @@
+====================================================================
+Owner.java — Description
+====================================================================
 
+OVERVIEW
+--------
+
+Owner.java represents a pet owner in the Spring PetClinic domain
+model. It is a JPA entity and extends the shared Person class.
+
+The class stores owner-specific information and maintains the
+relationship between an owner and their pets.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Represents an owner as a persistent domain entity.
+  - Stores address, city, and telephone information.
+  - Maintains a collection of pets belonging to the owner.
+  - Provides methods for adding and finding pets.
+  - Provides validation for owner information.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Entity definition
+
+  Owner is marked with @Entity and mapped to the "owners" database
+  table.
+
+STEP 2 — Owner information
+
+  The class stores:
+    - address
+    - city
+    - telephone
+
+  Validation annotations are used to validate these fields.
+
+STEP 3 — Pet relationship
+
+  Owner maintains a list of Pet objects using a @OneToMany
+  relationship.
+
+  The relationship uses cascading and eager fetching.
+
+STEP 4 — Adding pets
+
+  addPet(Pet pet) adds a pet to the owner's collection when the pet
+  is new.
+
+STEP 5 — Finding pets
+
+  getPet() can search for a pet by:
+    - name
+    - ID
+
+  The class can also ignore pets that have not yet been saved.
+
+STEP 6 — Visit handling
+
+  addVisit() locates a pet belonging to the owner and delegates the
+  visit addition to that Pet object.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - JPA Entity / Domain Model
+  - Inherits common person information from Person
+  - Maintains Owner -> Pet relationships
+  - Contains domain-level behavior rather than only storing fields
+  - Uses validation and JPA relationship annotations
