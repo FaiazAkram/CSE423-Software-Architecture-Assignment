@@ -1,0 +1,64 @@
+====================================================================
+VetRepository.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+VetRepository provides the persistence interface for veterinarian
+entities.
+
+Unlike OwnerRepository, it extends Spring Data's more general
+Repository interface and declares the required retrieval methods
+explicitly.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Retrieve all veterinarians.
+  - Retrieve veterinarians using pagination.
+  - Provide a database abstraction for Vet entities.
+  - Apply read-only transaction behavior.
+  - Cache veterinarian retrieval results.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Repository definition
+
+  VetRepository extends:
+
+    Repository<Vet, Integer>
+
+  This defines the repository abstraction for Vet objects.
+
+STEP 2 — Retrieve all vets
+
+  findAll() retrieves all veterinarians from the data store.
+
+STEP 3 — Paginated retrieval
+
+  findAll(Pageable pageable) retrieves veterinarians in pages.
+
+STEP 4 — Transaction handling
+
+  The retrieval methods use @Transactional(readOnly = true),
+  indicating that these operations are read-only.
+
+STEP 5 — Caching
+
+  The retrieval methods use @Cacheable("vets") so veterinarian
+  results can be cached.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - Repository layer
+  - Uses Spring Data Repository abstraction
+  - Provides Vet persistence operations
+  - Supports pagination
+  - Uses read-only transactions
+  - Uses Spring caching
