@@ -1,0 +1,72 @@
+====================================================================
+PetController.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+PetController manages web requests related to pets belonging to
+owners.
+
+It is a Spring MVC controller that retrieves owners and pet types
+through repositories, validates pet information, and handles pet
+creation and update operations.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Display pet creation and update forms.
+  - Retrieve the owner associated with a pet.
+  - Retrieve available pet types.
+  - Validate pet information.
+  - Create new pets.
+  - Update existing pets.
+  - Handle duplicate pet-name errors.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Controller dependencies
+
+  The controller receives OwnerRepository and PetTypeRepository
+  through constructor injection.
+
+STEP 2 — Loading pet types
+
+  populatePetTypes() retrieves available pet types for the web
+  forms.
+
+STEP 3 — Finding the owner
+
+  findOwner() retrieves the owner associated with the URL.
+
+STEP 4 — Finding the pet
+
+  findPet() retrieves an existing pet from the owner.
+
+  If no pet ID is provided, a new Pet object is created.
+
+STEP 5 — Creating a pet
+
+  processCreationForm() validates the submitted pet.
+
+  It checks for duplicate pet names and invalid future birth dates
+  before saving the owner and pet relationship.
+
+STEP 6 — Updating a pet
+
+  The controller provides operations for displaying and processing
+  pet update forms.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - Spring MVC Controller
+  - Uses repository dependencies
+  - Handles pet-related web requests
+  - Performs validation
+  - Handles duplicate pet-name errors
+  - Manages Owner-Pet relationships
