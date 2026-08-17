@@ -1,0 +1,55 @@
+====================================================================
+PetClinicApplication.java — Description
+====================================================================
+
+OVERVIEW
+--------
+
+PetClinicApplication.java is the main entry point of the Spring
+PetClinic Spring Boot application.
+
+It is responsible for starting the Spring Boot application and
+initializing the application context.
+
+
+MAIN RESPONSIBILITIES
+---------------------
+
+  - Start the Spring Boot application.
+  - Enable Spring Boot auto-configuration.
+  - Initialize the application context.
+  - Import the application's runtime hints.
+
+
+STEP-BY-STEP BEHAVIOR
+---------------------
+
+STEP 1 — Spring Boot configuration
+
+  The class is annotated with @SpringBootApplication.
+
+  This enables Spring Boot configuration, component scanning, and
+  auto-configuration.
+
+STEP 2 — Runtime hints
+
+  @ImportRuntimeHints is used to register the application's
+  runtime hints.
+
+STEP 3 — Application startup
+
+  The main() method calls:
+
+    SpringApplication.run(PetClinicApplication.class, args);
+
+  This starts the Spring Boot application.
+
+
+KEY POINTS TO NOTE
+------------------
+
+  - Main application entry point
+  - Spring Boot application class
+  - Enables component scanning and auto-configuration
+  - Starts the application context
+  - Does not contain business logic
