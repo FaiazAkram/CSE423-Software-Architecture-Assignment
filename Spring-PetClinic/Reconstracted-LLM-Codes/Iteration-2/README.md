@@ -17,14 +17,6 @@ Repository
     ↓
 Entity
 
-
-
-
-
-
-## Architecture
-
-```text
 com.vetclinic
 ├── controller    → REST API endpoints
 ├── service       → Business logic
