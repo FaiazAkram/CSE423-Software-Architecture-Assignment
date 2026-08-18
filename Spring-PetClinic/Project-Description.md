@@ -42,11 +42,11 @@ Preserved
 
 ## Metrics
 
-**Pattern Preservation Rate: 90%**
+Pattern Preservation Rate (PPR) = 90%
 
-**Pattern Collapse Rate: 10%**
+Pattern Collapse Rate (PCR) = 10%
 
-**Abstraction Loss Score: Very low**
+Abstraction Loss Score (ALS) = -2.50
 
 ---
 
