@@ -210,7 +210,7 @@ This progression demonstrates that prompt refinement directly affected architect
 
 ---
 
-## Structural Comparison
+### Structural Comparison
 
 | Aspect | Human | Iteration 1 | Iteration 2 | Iteration 3 |
 |---|---|---|---|---|
@@ -221,7 +221,7 @@ This progression demonstrates that prompt refinement directly affected architect
 | Factory abstraction | Not confirmed | No | No explicit abstraction | Yes |
 | Abstraction level | Baseline | Lower | Increased | Highest |
 
-## Key Observation
+### Key Observation
 
 The LLM reconstructions became progressively more structured as the
 prompts became more specific.
