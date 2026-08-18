@@ -74,8 +74,3 @@ The selected files are intended to support the analysis of the following design 
 - Singleton Pattern
 - Factory Pattern
 
-These patterns will later be compared with the LLM-generated implementation to calculate:
-
-- Pattern Preservation Rate (PPR)
-- Pattern Collapse Rate (PCR)
-- Abstraction Loss Score (ALS)
