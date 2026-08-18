@@ -190,6 +190,26 @@ The prompt was designed specifically to preserve the abstraction rather than mer
 | Prompt 2  | Layered architecture + Factory          | Added Service layer and Factory classes                        |
 | Prompt 3  | Factory abstraction + Singleton + SOLID | Added explicit Factory interfaces and concrete implementations |
 
+## Structural Comparison
+
+| Aspect | Human | Iteration 1 | Iteration 2 | Iteration 3 |
+|---|---|---|---|---|
+| Controller separation | Present | Present | Present | Present |
+| Service layer | Present/verify | Present | Explicit | Explicit |
+| Repository layer | Present | Present | Present | Present |
+| Singleton behavior | Present | Preserved | Preserved | Preserved |
+| Factory abstraction | Not confirmed | No | No explicit abstraction | Yes |
+| Abstraction level | Baseline | Lower | Increased | Highest |
+
+## Key Observation
+
+The LLM reconstructions became progressively more structured as the
+prompts became more specific.
+
+The most significant change occurred between Iterations 2 and 3,
+where Factory abstraction was made explicit instead of using only
+concrete Factory classes.
+
 ### Overall Prompt Progress
 
 ```text
