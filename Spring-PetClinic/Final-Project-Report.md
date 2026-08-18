@@ -811,10 +811,10 @@ The additional abstractions were mainly introduced through the explicit Factory 
 | Aspect               | Human-Written System            | LLM Iteration 3                               |
 | -------------------- | ------------------------------- | --------------------------------------------- |
 | Architecture         | Spring-based architecture       | Explicit layered reconstruction               |
-| Controller Layer     | ✅                               | ✅                                             |
-| Service Layer        | Limited in selected snapshot    | ✅ Explicit                                    |
-| Repository Layer     | ✅                               | ✅                                             |
-| Entity Layer         | ✅                               | ✅                                             |
+| Controller Layer     | ✅                               | ✅                                          |
+| Service Layer        | Limited in selected snapshot    | ✅ Explicit                                   |
+| Repository Layer     | ✅                               | ✅                                          |
+| Entity Layer         | ✅                               | ✅                                          |
 | Singleton            | Spring-managed                  | Spring-managed                                |
 | Factory              | Framework-based object creation | Explicit Factory interfaces + implementations |
 | Factory Abstraction  | Implicit                        | Explicit                                      |
